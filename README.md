@@ -71,7 +71,7 @@ readMore.html reads this data and displays the full content
 # 🧑‍💻 Author
 Sayak Saha
 
-💼 MCA Student, Future Institute of Engineering and Management
+💼 MCA'2025, Future Institute of Engineering and Management
 
 # 📃 License
 This project is licensed under the MIT License.
