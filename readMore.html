@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News Detail</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-4" id="newsDetailContainer">
+    <a href="index.html" class="btn btn-secondary mb-3">← Back to News</a>
+    <!-- News content will be loaded here -->
+  </div>
+
+  <script>
+        // const escapeHTML = (str) =>
+        // str
+        //     ?.replace(/&/g, "&amp;")
+        //     .replace(/</g, "&lt;")
+        //     .replace(/>/g, "&gt;")
+        //     .replace(/"/g, "&quot;")
+        //     .replace(/'/g, "&#039;");
+
+        const params = new URLSearchParams(window.location.search);
+        const article = Object.fromEntries(params.entries());
+
+        const container = document.getElementById("newsDetailContainer");
+
+        if (article.title) {
+        container.innerHTML += `
+            <h2>${article.title}</h2>
+            <img src="${article.urlToImage || 'https://via.placeholder.com/600x300'}" class="img-fluid mb-3" alt="Image"/>
+            <p><strong>Author:</strong> ${article.author || "Unknown"}</p>
+            <p><strong>Source:</strong> ${article["source.name"] || "Unknown"}</p>
+            <p><strong>Published At:</strong> ${new Date(article.publishedAt).toLocaleString()}</p>
+            <p><strong>Description:</strong> ${article.description || "No full content available."}</p>
+            <a class="btn btn-primary" href="${article.url}" target="_blank">Read Original Article</a>
+        `;
+        } else {
+        container.innerHTML = "<p>Sorry! No article data found.</p>";
+        }
+
+
+
+    // const article = JSON.parse(localStorage.getItem("newsDetail"));
+    // const container = document.getElementById("newsDetailContainer");
+
+    // if (article) {
+    //   container.innerHTML += `
+    //     <h2>${article.title}</h2>
+    //     <img src="${article.urlToImage || 'https://via.placeholder.com/600x300'}" class="img-fluid mb-3" alt="Image"/>
+    //     <p><strong>Author:</strong> ${article.author || "Unknown"}</p>
+    //     <p><strong>Source:</strong> ${article.source?.name || "Unknown"}</p>
+    //     <p><strong>Published At:</strong> ${new Date(article.publishedAt).toLocaleString()}</p>
+    //     <p><strong>Content:</strong> ${article.description || "No full content available."}</p>
+    //     <a class="btn btn-primary" href="${article.url}" target="_blank">Read Original Article</a>
+    //   `;
+    // } else {
+    //   container.innerHTML = "<p>Sorry! No article data found.</p>";
+    // }
+  </script>
+</body>
+</html>
