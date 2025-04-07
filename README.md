@@ -26,12 +26,12 @@ API: NewsAPI.org
 Storage: localStorage
 
 # 📁 Folder Structure
-news-aggregator/
+`news-aggregator/
 │
 ├── index.html              # Homepage with news & search
 ├── readMore.html           # Displays full article
 ├── script.js/
-
+`
 # 🔧 Setup Instructions
 Clone the Repository
 
