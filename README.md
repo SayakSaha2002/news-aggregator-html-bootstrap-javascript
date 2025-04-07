@@ -1,4 +1,4 @@
-﻿# News Aggregator Website using HTML, Bootstrap and JavaScript
+﻿# 📰 News Aggregator Website using HTML, Bootstrap and JavaScript
 🎥 [Watch Demo Video](https://youtu.be/AlJ8WE9JrwI)
 
 # Sample Snapshot
