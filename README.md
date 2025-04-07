@@ -36,9 +36,10 @@ Storage: localStorage
 # 🔧 Setup Instructions
 Clone the Repository
 
-git clone https://github.com/your-username/news-aggregator.git
-cd news-aggregator
-
+```
+git clone https://github.com/SayakSaha2002/news-aggregator-html-bootstrap-javascript.git
+cd news-aggregator-html-bootstrap-javascript.git
+```
 # Get an API Key
 
 Visit https://newsapi.org
