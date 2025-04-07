@@ -2,7 +2,7 @@ let currentPage = 1;
 let currentQuery = "everything";
 let totalPages = 1;
 let pageSize=22;
-const apiKey = "Your_api_key_here";
+const apiKey = "YOUR_API_KEY_HERE";
 
 const fetchNews = async (page = 1, query = "everything") => {
   const fromDate = new Date().toISOString().split("T")[0];
