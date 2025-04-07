@@ -32,6 +32,7 @@ Storage: localStorage
 ├── readMore.html           # Displays full article
 ├── script.js/
 `
+project-folder/ │ ├── index.html ├── readMore.html ├── css/ │ └── style.css ├── js/ │ ├── main.js │ └── readMore.js
 # 🔧 Setup Instructions
 Clone the Repository
 
