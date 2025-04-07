@@ -46,13 +46,13 @@ Visit https://newsapi.org
 
 Create an account and get your free API key
 
-Insert Your API Key
+# Insert Your API Key
 
 Open script.js
 
 Replace 'YOUR_API_KEY_HERE' with your API key
 
-Run the Project
+# Run the Project
 
 Open index.html in your browser
 
